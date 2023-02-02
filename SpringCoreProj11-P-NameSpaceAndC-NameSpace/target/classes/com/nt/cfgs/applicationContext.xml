@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	 
+	 <!-- Dependent class cfg -->
+	<!-- <bean id="deptStartDate" class="java.util.Date">
+		<property name="year" value="110"/>
+		<property name="month" value="10"/>
+		<property name="date" value="24"/>
+	</bean>
+	<bean id="dept" class="com.nt.sbeans.Department">
+		<constructor-arg name="dno" value="1001"/>
+		<constructor-arg name="dname" value="Accounts"/>
+		<constructor-arg name="size" value="100"/>
+		<constructor-arg name ="startDate" ref="deptStartDate"/>		
+	</bean>
+	
+	Target class cfg
+	<bean id="empDOBDt" class="java.util.Date">
+		<property name="year" value="90"/>
+		<property name="month" value="10"/>
+		<property name="date" value="25"/>
+	</bean>
+	<bean id="emp" class="com.nt.sbeans.Employee">
+		<property name="eno" value="101"/>
+		<property name="ename" value="rajesh"/>
+		<property name="salary" value="30000"/>
+		<property name="dob" ref="empDOBDt"/>
+		<property name="dept" ref="dept"/>
+	</bean> --> 
+	
+	<!-- Dependent class config -->
+	<bean id="deptStartDate" class="java.util.Date" p:year="110" p:month="10" p:date="29"/>
+	<bean id="dept" class="com.nt.sbeans.Department" c:dno="102" c:dname="Finance" c:size="100" c:startDate-ref="deptStartDate"/>
+	
+	<!-- Target class config -->
+	<bean id="empDob" class="java.util.Date" p:year="88" p:month="04" p:date="25"/>
+	<bean id="emp" class="com.nt.sbeans.Employee" p:eno="105" p:ename="soundarya" p:dept-ref="dept" p:salary="66000" p:dob-ref="empDob"/>
+
+
+</beans>
