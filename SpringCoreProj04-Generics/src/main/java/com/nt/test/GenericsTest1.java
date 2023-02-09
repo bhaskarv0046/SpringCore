@@ -28,8 +28,7 @@ public class GenericsTest1 {
 			System.out.println("_______________________");
 			Person person=gt1.getPersonInfo(Person.class);
 			person.m1();
-			
-					
+								
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
