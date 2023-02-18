@@ -1,0 +1,30 @@
+with out control point execution
+//
+class com.nt.service.BankOperationsService$$SpringCGLIB$$0......................class com.nt.service.BankOperationsService
+double com.nt.service.BankOperationsService.calcSimpleIntrestAmount(double,double,double)with args[10000.0, 2.0, 12.0] has entered int b.method atTue Feb 14 17:50:52 IST 2023
+BankOperationsService.calcSimpleIntrestAmount()
+double com.nt.service.BankOperationsService.calcSimpleIntrestAmount(double,double,double)with args[10000.0, 2.0, 12.0]has exited from b method atTue Feb 14 17:50:52 IST 2023
+double com.nt.service.BankOperationsService.calcSimpleIntrestAmount(double,double,double)with args[10000.0, 2.0, 12.0]has taken 63 ms to complete execution
+Simple intrest amount:: 2400.0
+______________________________________________________
+double com.nt.service.BankOperationsService.calcCompoundIntrestAmount(double,double,double)with args[10000.0, 2.0, 12.0] has entered int b.method atTue Feb 14 17:50:52 IST 2023
+BankOperationsService.calcCompoundIntrestAmount()
+double com.nt.service.BankOperationsService.calcCompoundIntrestAmount(double,double,double)with args[10000.0, 2.0, 12.0]has exited from b method atTue Feb 14 17:50:52 IST 2023
+double com.nt.service.BankOperationsService.calcCompoundIntrestAmount(double,double,double)with args[10000.0, 2.0, 12.0]has taken 0 ms to complete execution
+Compound interest amount:: 2682.417945625455
+//
+================================================================
+after adding control test output
+//
+class com.nt.service.BankOperationsService$$SpringCGLIB$$0......................class com.nt.service.BankOperationsService
+double com.nt.service.BankOperationsService.calcSimpleIntrestAmount(double,double,double)with args[10000.0, 2.0, 12.0] has entered int b.method atTue Feb 14 19:08:51 IST 2023
+BankOperationsService.calcSimpleIntrestAmount()
+double com.nt.service.BankOperationsService.calcSimpleIntrestAmount(double,double,double)with args[10000.0, 1.5, 12.0]has exited from b method atTue Feb 14 19:08:51 IST 2023
+double com.nt.service.BankOperationsService.calcSimpleIntrestAmount(double,double,double)with args[10000.0, 1.5, 12.0]has taken 58 ms to complete execution
+Simple intrest amount:: 2832.0
+______________________________________________________
+double com.nt.service.BankOperationsService.calcCompoundIntrestAmount(double,double,double)with args[10000.0, 2.0, 12.0] has entered int b.method atTue Feb 14 19:08:51 IST 2023
+BankOperationsService.calcCompoundIntrestAmount()
+double com.nt.service.BankOperationsService.calcCompoundIntrestAmount(double,double,double)with args[10000.0, 1.5, 12.0]has exited from b method atTue Feb 14 19:08:51 IST 2023
+double com.nt.service.BankOperationsService.calcCompoundIntrestAmount(double,double,double)with args[10000.0, 1.5, 12.0]has taken 0 ms to complete execution
+Compound interest amount:: 3165.253175838037
